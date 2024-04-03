@@ -1,0 +1,153 @@
+/* Resetting default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  padding-bottom: 40px; 
+}
+
+/* Navigation styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 20px; 
+}
+
+.logopic {
+  max-width: 70px;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+  position: absolute;
+  top: 60px; 
+  right: 20px; 
+}
+
+.menu li {
+  margin-left: 20px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Menu button styles */
+.menu-btn {
+  display: none;
+}
+
+.cancel-btn {
+  display: none;
+}
+
+/* Home section styles */
+.home {
+  padding: 180px 20px 100px; 
+  text-align: center;
+}
+
+/* About section styles */
+.about {
+  padding: 180px 20px 100px; 
+}
+
+.title {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.about-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left img {
+  max-width: 100%;
+}
+
+.right {
+  margin-left: 40px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 20px; 
+  left: 20px; 
+  right: 20px; 
+}
+
+/* Scroll button styles */
+.scroll-button {
+  position: fixed;
+  bottom: 100px; 
+  right: 20px;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.scroll-button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .menu {
+      display: none;
+  }
+
+  .menu-btn {
+      display: block;
+      font-size: 24px;
+      cursor: pointer;
+  }
+
+  .cancel-btn {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 24px;
+      cursor: pointer;
+  }
+
+  .menu.active {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100px;
+      right: 20px;
+      background-color: #fff;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+  }
+
+  .menu.active li {
+      margin: 10px 0;
+  }
+}
